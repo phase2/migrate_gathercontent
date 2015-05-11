@@ -1,0 +1,17 @@
+name = "Migrate GatherContent"
+description = "Provide Migrate UI wizard for the GatherContent service"
+package = "Migration"
+core = 7.x
+dependencies[] = migrate
+dependencies[] = migrate_ui
+dependencies[] = libraries
+
+; GatherContent migration classes.
+files[] = includes/GatherContentAPI.class.php
+files[] = includes/MigrateSourceGatherContent.class.php
+files[] = includes/MigrateFileGatherContent.class.php
+files[] = includes/MigrateGatherContentSQLMap.class.php
+files[] = includes/MigrateGatherContentBase.class.php
+files[] = includes/MigrateGatherContentPages.class.php
+files[] = includes/MigrateGatherContentMenu.class.php
+files[] = includes/GatherContentMigrateWizard.class.php
